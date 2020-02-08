@@ -4,6 +4,8 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'first_project.settings')
 import django
 django.setup()
 
+#test commit git
+
 #fake pop script
 import random
 from first_app.models import AccessRecord, Topic, Webpage
