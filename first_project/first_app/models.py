@@ -1,7 +1,8 @@
 from django.db import models
 
 # Create your models here.
-
+#
+#
 class Topic(models.Model):
     top_name = models.CharField(max_length=264, unique = True)
 
@@ -15,10 +16,10 @@ class Webpage(models.Model):
 
     def __str__(self):
         return self.name
-
+#nowe rzeczy
 class AccessRecord(models.Model):
     name = models.ForeignKey(Webpage, on_delete=models.CASCADE)
     date = models.DateField()
-
+#i tutaj
     def __str__(self):
         return str(self.date)
